@@ -1,7 +1,7 @@
 # Next.js AI Chatbot Starter
 
 A streaming chat app in Next.js 16 + AI SDK v7 — wired through
-[TokenGuard](https://tokenguard-fawn.vercel.app) so you cannot get a surprise AI bill.
+[TokenGuard](https://app.spendcap.dev) so you cannot get a surprise AI bill.
 
 Point it at your own OpenAI or Anthropic key, set a monthly cap, and every
 request is metered and hard-stopped at the edge before it reaches the provider.
@@ -36,7 +36,7 @@ The free tier covers 2 proxy keys and $50/month of tracked spend.
 
 ### 1. Create a TokenGuard account
 
-Sign up at [TokenGuard](https://tokenguard-fawn.vercel.app), then:
+Sign up at [TokenGuard](https://app.spendcap.dev), then:
 
 1. **Add a provider credential** — your own OpenAI or Anthropic API key. It is
    encrypted at rest and only ever decrypted at the edge to sign the upstream
@@ -92,4 +92,4 @@ OpenAI's newer `/responses` API, which other upstreams do not serve.
 ## Built with
 
 [Next.js 16](https://nextjs.org) · [AI SDK v7](https://sdk.vercel.ai) ·
-[Tailwind CSS v4](https://tailwindcss.com) · [TokenGuard](https://tokenguard-fawn.vercel.app)
+[Tailwind CSS v4](https://tailwindcss.com) · [TokenGuard](https://app.spendcap.dev)
