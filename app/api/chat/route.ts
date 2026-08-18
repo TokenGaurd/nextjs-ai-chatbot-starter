@@ -14,7 +14,7 @@ function missingConfig(): string | null {
   const key = process.env.TOKEN_GUARD_API_KEY;
   const base = process.env.TOKEN_GUARD_BASE_URL;
   if (!key || key.includes('your_key_here') || key.includes('your_actual_key')) {
-    return 'TOKEN_GUARD_API_KEY is not set. Create a free proxy key at https://tokenguard.dev and put it in .env.local';
+    return 'TOKEN_GUARD_API_KEY is not set. Create a free proxy key at https://tokenguard-fawn.vercel.app and put it in .env.local';
   }
   if (!base) return 'TOKEN_GUARD_BASE_URL is not set. Copy it from .env.example into .env.local';
   return null;
